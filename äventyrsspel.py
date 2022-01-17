@@ -111,7 +111,7 @@ def rooms():
    
     '''
     room_list = [1, 2, 3]
-    room_randomizer = rand.choices(room_list, weights=(2, 2, 1), k=1)
+    room_randomizer = rand.choices(room_list, weights=(2, 2, 1), k=1)[0]
 
     while True:
         clear_screen()
