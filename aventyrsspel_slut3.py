@@ -109,7 +109,7 @@ def rooms():
     Ifall avataren har fullt inventory så behövs det slänga eller bytas ut.
     """
     room_list = [1, 2, 3]
-    room_randomizer = rand.choices(room_list, weights=(2, 100, 1), k=1)[0]
+    room_randomizer = rand.choices(room_list, weights=(2, 2, 1), k=1)[0]
 
     while True:
         clear_screen()
